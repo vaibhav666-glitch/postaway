@@ -2,6 +2,7 @@ import express from 'express'
 import UserController from './user.controller.js';
 
 
+
 const UserRouter=express.Router();
 const userController= new UserController();
 UserRouter.get("/",userController.getAllUser);
